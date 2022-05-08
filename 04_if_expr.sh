@@ -20,7 +20,7 @@ if [ $age -ge 6 ]; then
     echo "$age >= 6"
 fi
 ## string ------------------------------
-if [ "$name" = "http" ]; then
+if [ "$name" == "http" ]; then
     echo "name == http"
 fi
 # -------------------------------------
@@ -42,11 +42,11 @@ else
 fi
 # -------------------------------------
 
-if [ "$name" = "http" ]; then
+if [ "$name" == "http" ]; then
   echo "if http"
-elif [ "$name" = "ftp" ]; then
+elif [ "$name" == "ftp" ]; then
   echo "elif ftp"
-elif [ "$name" = "ssh" ]; then
+elif [ "$name" == "ssh" ]; then
   echo "elif ssh"
 else
   echo "else"
